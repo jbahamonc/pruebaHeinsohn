@@ -37,7 +37,7 @@ public class BaseController {
 	@GetMapping(value="/1", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ArrayList<Integer> getPermutation(@RequestBody Permutation permutation) {
 		System.out.print(permutation.toString());
-		return permutationRepo.getPermutation(permutation);
+		return permutationRepo.getPermutation(permutation) ;
 	}
 
 	@GetMapping(value="/2", produces = MediaType.APPLICATION_JSON_VALUE)
